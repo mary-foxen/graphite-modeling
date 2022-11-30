@@ -22,5 +22,8 @@ for f in files:
 # and equating it to the list values
 df['eff_k'] = values
 
+#save back to data.csv file
+df.to_csv("data.csv", index=False)
+
 print(df)
 
